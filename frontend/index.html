@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faça seu Pedido!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/pizza.svg" alt="Pizzaria do SENAI" id="brand-logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Peça sua pizza</a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">Gerenciar Pedidos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="alert-container"></div>
+  <div id="main-banner">
+    <h1>Faça seu Pedido</h1>
+  </div>
+
+  <div id="main-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Monte a pizza como desejar:</h2>
+          <form id="pizza-form" class="text-left">
+            <div class="form-group">
+              <label for="borda">Borda:</label>
+              <select name="borda" id="borda" class="form-control" required>
+                <option value="">Selecione</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="massa">Massa:</label>
+              <select name="massa" id="massa" class="form-control" required>
+                <option value="">Selecione</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Sabores: (Máximo 3)</label>
+              <div id="sabores-container" class="row sabores-container"></div>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Fazer Pedido!">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer>
+    <p>Pizzaria do SENAI &copy; 2026</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
