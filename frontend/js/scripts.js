@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://pizzaria-senai.onrender.com";
 
 const showAlert = (msg, type = "success") => {
     const container = document.getElementById("alert-container");
